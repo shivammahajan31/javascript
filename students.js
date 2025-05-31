@@ -35,3 +35,10 @@ Student3details();
 
 let Student4details = printStudentDetails.bind(student4,"History", 85);
 Student4details()
+
+let printetails = function(date,house) {
+         console.log(this.name + " " + "from" + " " + this.city +  " " + "joining" + " " + date + " " +"house" + " " + house)
+
+}
+
+printetails.call(student1,"31/07/1999","blue")
