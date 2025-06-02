@@ -22,6 +22,13 @@ let student4 = {
     city: "shivaji nagar"
 };
 
+
+for (let index in student1){
+    console.log(("index of student1 :"),index)
+};
+
+
+
 let printStudentDetails = function(subject, marks) {
     console.log(this.rollNumber + " " + this.name + " " + this.city + " " + subject + " " + marks);
 };

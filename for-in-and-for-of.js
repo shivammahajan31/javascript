@@ -19,18 +19,4 @@ for (let namesofemployees of employee) {
     console.log("names of employees", namesofemployees)
 }
 
-//if else for sound
-let animal = "cat";
-if (animal === "cat") {
-  console.log("Meow!");
-} else if (animal === "dog") {
-  console.log("Woof!");
-}
-
-animal = "dog";
-if (animal === "cat") {
-  console.log("Meow!");
-} else if (animal === "dog") {
-  console.log("Woof!");
-}
 
