@@ -1,11 +1,12 @@
-let nums = [1, 2, 3, 4, 5, 6];
-let sumEvenDoubled = nums
-  .map(num => num * 2)
-  .filter(num => num % 2 === 0)
-  .reduce((sum, num) => sum + num, 0);
-console.log(sumEvenDoubled);
+// Q2
+let x = [1, 2, 3, 4, 5, 6];
+let total = x
+  .map(y => y * 2)
+  .filter(y => y % 2 === 0)
+  .reduce((sum, y) => sum + y, 0);
+console.log(total);
 
- //if else if else 
+ //if else if else Q3
  function checkNumber(num) {
   if (num > 0) {
     console.log("Positive");
@@ -15,9 +16,9 @@ console.log(sumEvenDoubled);
     console.log("Zero");
   }
 }
-checkNumber(-5);
+checkNumber(0);
 
-//switch case 
+//switch case Q4
  function getDayName(day) {
   switch(day) {
     case 1:
@@ -30,24 +31,17 @@ checkNumber(-5);
       console.log("Other day");
   }
 }
-getDayName(1);
+getDayName(2);
 
-//for loop 
+//for loop Q5
 for (let i = 1; i <= 100; i++) {
   if (i % 10 === 0) {
     console.log("Number", i);
   }
 }
- //while loop 
- let i = 10;
-while (i <= 40) {
-  if (i % 2 === 0) {
-    console.log(i);
-  }
-  i++;
-}
+ 
 
-//do while 
+//do while Q7
 let j = 10;
 do {
   if (j % 2 === 0) {

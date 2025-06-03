@@ -5,5 +5,15 @@ do {
 } else {
   console.log(`${number} is odd`);
 }
-  number++;
+ number++;
 } while (number <= 10);
+
+
+
+ var num = 1;
+ if (num >= 0) {
+  console.log("num is positive");
+ } else {
+  console.log("num is nagative");
+ }
+ 

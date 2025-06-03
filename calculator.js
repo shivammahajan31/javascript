@@ -1,45 +1,35 @@
-var x = 10 ; y = 20 ; z = 50 ; w = 40 ; r = 60 ; q = 30 ; t = 80 ;u = 20 
+var x = Number(prompt("Enter value 1"));
+var y = Number(prompt("Enter value 2"));
+var op = prompt("Enter operation to perform: add, subtract, multiply, divide");
 
-function add(a, b) {
-    
-    let result = a;
-    for (let i = 0; i < b; i++) {
-        result++;
-    }
-    return result;
+let result;
+
+switch (op) {
+    case "add":
+        result = x + y;
+        break;
+
+    case "subtract":
+        result = x - y;
+        break;
+
+    case "multiply":
+        result = 0;
+        for (let i = 0; i < y; i++) {
+            result += x;
+        }
+        break;
+
+    case "divide":
+        if (y === 0) {
+            result = "Cannot divide by zero";
+        } else {
+            result = x / y;
+        }
+        break;
+
+    default:
+        result = "Invalid operation";
 }
 
-function subtract(a, b) {
-    let result = a;
-    for (let i = 0; i < b; i++) {
-        result--;
-    }
-    return result;
-}
-
-function multiply(a, b) {
-    let result = 0;
-    for (let i = 0; i < b; i++) {
-        result += a;
-    }
-    return result;
-}
-
-function divide(a, b) {
-
-    if (b === 0) {
-        return " null";
-    }
-    return a / b;
-}
-
-
-function Calculator(a, b, operation) {
-    return operation(a, b);
-}
-
-
-console.log("Add:", Calculator(x, y, add));      
-console.log("Subtract:", Calculator(z, w, subtract)); 
-console.log("Multiply:", Calculator(r, q, multiply)); 
-console.log("Divide:", Calculator(t, u,divide));      
+console.log("Result: " + result);

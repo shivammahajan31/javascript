@@ -1,19 +1,18 @@
 // global variable
-var x = "10";
-
+var x = "10"; 
 //    outer function A
 function A() {
-    
+      let y = 5
         console.log("outer Function A: x = " + x)
 
     // inner function
     function A1() { 
         console.log("Inner Function A1: x = " + x);
+    
     }
-
     // Inner function 
     function A2() {
-         console.log("Inner Function A2: x = " + x);
+         console.log("Inner Function A2: x = " + y);
     }
     // Inner function
     function A3() {
