@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Calculator Web App</title>
+    <style>
+        body {
+            color: darkred;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input, button {
+            color: rgb(8, 11, 47);
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #result {
+            color: rgb(61, 11, 109);
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: chartreuse"> Calculator</h1>  
+
+    <label>Value 1:
+        <input type="number" id="x">
+    </label>
+    <br>
+    <label>Value 2:
+        <input type="number" id="y">
+    </label>
+    <br>
+    <label>Operation (add, subtract, multiply, divide):
+        <input type="text" id="op">
+    </label>
+    <br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="result"></div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

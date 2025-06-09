@@ -1,5 +1,6 @@
-var points = [10,15,20,30,5];
-var pointscopy = [...points,50,75,];
+var points = [10,50,60,80]
+var t = [6]
+var pointscopy = [...points,50,...t,75];
 
 console.log(points,pointscopy)
 
@@ -17,8 +18,8 @@ console.log(numbersaddition);
 const marks = [70, 45, 90, 30, 55, 20, 88];
 const [A, B, c, ...restMarks] = marks;
 
-function filterMarks(first, ...rest) {
-    const allMarks = [first, ...rest];
+function filterMarks(...rest) {
+    const allMarks = [ ...rest];
     const passed = allMarks.filter(mark => mark > 50);
     const fail = allMarks.filter(mark => mark < 50);
     console.log("passed Marks:", passed);
