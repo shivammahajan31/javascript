@@ -23,3 +23,13 @@ tr:nth-child(even) {
 tr:hover {
   background-color: #d0d5ca;
 }
+ 
+h2 {
+  color: brown;
+  border-style: ridge;
+  border-color: black;
+}
+
+body { background-image: image-set();
+
+}
