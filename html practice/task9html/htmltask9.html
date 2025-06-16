@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container" id="mainDiv">
+    <h1>HTML Example</h1>
+
+    <h2>Unordered List</h2>
+    <ul class="list">
+      <li>  contact</li>
+      <li>products</li>
+      <li>services</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol class="list2">
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+
+    <h2> iframe</h2>
+    <iframe src="https://skramby.com/" width="500" height="300" title="Sample iframe"></iframe>
+
+    <h2>Click Button to Show Message</h2>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="output"></p>
+
+    <h2>click to visit website </h2>
+   <a href="https://skramby.com/" target="_blank">
+  <button>click for webpage</button>
+</a>
+
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('output').innerText = 'Hello from skramby!';
+    }
+  </script>
+
+</body>
+</html>

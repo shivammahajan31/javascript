@@ -27,13 +27,13 @@ console.log("cart 100:", cart100);
 const productNames = products.map(product => product.name);
 console.log("Product Names:", productNames);
 
-const totalPrice = products.reduce((total, product) => total + product.price, 0);
+const totalPrice = products.reduce((total, product) => total + product.price,0);
 console.log("Total Price:", totalPrice);
 
 const totalinstockValue = products
   .filter(product => product.instock)       
   .map(product => product.price)            
-  .reduce((sum, price) => sum + price, 0);  
+  .reduce((sum, price) => sum + price,0);  
 
 console.log("Total Value of In-Stock Products:", totalinstockValue);
 

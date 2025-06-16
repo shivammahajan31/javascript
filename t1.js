@@ -1,4 +1,4 @@
-    `var laptop1 = {
+ var laptop1 = {
     RAM: "8 GB",
     SSD: "512 GB",
 };
