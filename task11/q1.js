@@ -4,9 +4,9 @@ const promise2 = new Promise((resolve,reject) => {setTimeout(() => resolve("Prom
 
 const promise3 = new Promise((resolve, reject) => {setTimeout(() => reject("Promise 3 error"), 1500);});
 
-async function AllSettled() {
+async function allsettled() {
   const results = await Promise.allSettled([promise1, promise2, promise3]);
   console.log("All Settled Results:", results);
 }
 
-AllSettled();
+allsettled();
